@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** ========== Default Style ========== **/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--radGradient);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary: #F3B61F;
+    --secondary: #FFE257;
+    --light: #FAEA8C;
+    --textColour: #FBF5D5;
+    --dark: #7A6123;
+    --radGradient: radial-gradient(circle, #F3B61F, #FFE257, #FAEA8C, #FBF5D5, #7A6123);
+    --linGradient: linear-gradient(to right, #F3B61F, #FFE257, #FAEA8C, #FBF5D5, #7A6123);
+    --box-shadow: .3125rem .3125rem 0px -0.0625rem rgba(0, 0, 0, 0.75);
+}
+
+/** ========= Navigation ========= */
+header {
+    background-color: var(--dark);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+.header-area .main-menu .navbar {
+    margin: 2rem;
+    padding: 1rem 2rem;
+}
+
+.header-area .main-menu {
+    right: -10rem;
+    text-indent: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+}
+
+.header-area .main-menu .navbar-nav .active a {
+    background: var(--radGradient);
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover {
+    background: var(--linGradient);
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0 2rem;
+}
+
+.header-area .main-menu .nav-item .nav-item .nav-link {
+    font: normal 600 1.125rem/.625rem;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--light);
+}
+
+/** ========= End of Navigation ========= */
+
+/** ======= Card Styles ======= */
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 6.25rem;
+    gap: 4rem;
+    list-style: none;
+}
+
+.card {
+    width: 50rem;
+    height: 40rem;
+    border-radius: .8rem;
+    margin: 2rem 4rem 4rem 2rem;
+    padding: .5rem;
+    background: var(--primary);
+    -webkit-box-shadow: 10px 10px 0px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 0px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 0px -1px rgba(0, 0, 0, 0.75);
+    transition: 300ms ease-in-out;
+}
+
+.card:nth-child(even) {
+    background: var(--light);
+}
+
+.card+.card {
+    margin-left: -10%;
+}
+
+.card:hover {
+    transform: rotate(-15deg);
+}
+
+.card:hover:nth-child(odd) {
+    background: var(--light);
+    transition: ease-in-out;
+}
+
+.card:hover:nth-child(even) {
+    background: var(--primary);
+    transition: ease-in-out;
+}
+
+.card:hover~.card {
+    z-index: 3;
+    translate: 3.75rem;
+}
+
+.card .prime {
+    width: 100%;
+    height: 100%;
+    border: purple;
+    border-radius: .5rem;
+}
+
+/** ======= End of Card Styles ======= */
