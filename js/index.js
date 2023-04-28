@@ -7,6 +7,26 @@ document.addEventListener("visibilitychange", function () {
     }
 });
 
+/** OnClick Navigate to  */
+
+function githubPrime() {
+    //window.open('https://github.com/IamPrime', '_blank'); #for opening on blank page
+    window.open('https://github.com/IamPrime', '_self');
+}
+function githubKeerthy() {
+    window.open('https://github.com/keerthikam-pfw', '_self');
+}
+function githubTanu() {
+    window.open('https://github.com/ThisisTanuja', '_self');
+}
+function githubReshma() {
+    window.open('https://github.com/reshmak-pfw', '_self');
+}
+function openGithub() {
+    window.open('https://github.com/Project-Blueblood', '_blank');
+}
+
+
 /** Sticky Navigation */
 function fixedNavbar() {
     const $wrapper = $('.wrapper');
