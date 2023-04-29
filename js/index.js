@@ -11,16 +11,16 @@ document.addEventListener("visibilitychange", function () {
 
 function githubPrime() {
     //window.open('https://github.com/IamPrime', '_blank'); #for opening on blank page
-    window.open('https://github.com/IamPrime', '_self');
+    window.open('https://github.com/IamPrime', '_blank');
 }
 function githubKeerthy() {
-    window.open('https://github.com/keerthikam-pfw', '_self');
+    window.open('https://github.com/keerthikam-pfw', '_blank');
 }
 function githubTanu() {
-    window.open('https://github.com/ThisisTanuja', '_self');
+    window.open('https://github.com/ThisisTanuja', '_blank');
 }
 function githubReshma() {
-    window.open('https://github.com/reshmak-pfw', '_self');
+    window.open('https://github.com/reshmak-pfw', '_blank');
 }
 function openGithub() {
     window.open('https://github.com/Project-Blueblood', '_blank');
