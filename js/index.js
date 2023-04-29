@@ -11,7 +11,7 @@ document.addEventListener("visibilitychange", function () {
 
 function githubPrime() {
     //window.open('https://github.com/IamPrime', '_blank'); #for opening on blank page
-    window.open('https://github.com/IamPrime', '_blank');
+    window.open('https://github.com/IamPrime', '_blank')
 }
 function githubKeerthy() {
     window.open('https://github.com/keerthikam-pfw', '_blank');
